@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+@theme inline {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-sage: var(--accent-sage);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-heading: var(--heading);
+  --color-body: var(--body);
+  --color-light: var(--light);
+
+  --shadow-luxe: 0 10px 40px -10px rgba(75, 46, 71, 0.12);
+  --shadow-soft: 0 10px 30px rgba(75, 46, 71, 0.05);
+}
+
+:root {
+  --radius: 0.5rem;
+
+  /* Ebba Cosme palette */
+  --background: oklch(0.984 0.004 350);          /* #FAF7F8 Pearl */
+  --foreground: oklch(0.32 0.05 340);            /* Dark Plum */
+  --heading: oklch(0.32 0.05 340);               /* #4B2E47 */
+  --body: oklch(0.48 0.03 345);                  /* #6E5A69 */
+  --light: oklch(0.64 0.025 340);                /* #9C8C98 */
+
+  --card: oklch(1 0 0);
+  --card-foreground: var(--heading);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--heading);
+
+  --primary: oklch(0.48 0.085 335);              /* #8B5C87 Deep Mauve */
+  --primary-foreground: oklch(0.99 0.003 350);
+
+  --secondary: oklch(0.81 0.07 340);             /* #D8A7C5 Soft Rose */
+  --secondary-foreground: var(--heading);
+
+  --accent: oklch(0.68 0.075 335);               /* #B88AB1 Dusty Orchid */
+  --accent-foreground: oklch(1 0 0);
+
+  --accent-sage: oklch(0.72 0.07 115);           /* #A6B07F Sage */
+
+  --muted: oklch(0.95 0.015 340);
+  --muted-foreground: var(--body);
+
+  --destructive: oklch(0.6 0.22 25);
+  --destructive-foreground: oklch(1 0 0);
+
+  --border: oklch(0.9 0.02 340);                 /* #E7D7E2 Pale Lilac */
+  --input: oklch(0.9 0.02 340);
+  --ring: oklch(0.48 0.085 335);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-body);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-serif);
+    color: var(--color-heading);
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .font-serif { font-family: var(--font-serif); }
+  .font-sans  { font-family: var(--font-sans); }
+
+  .arch-frame {
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    overflow: hidden;
+  }
+
+  .text-heading { color: var(--color-heading); }
+  .text-body    { color: var(--color-body); }
+  .text-light   { color: var(--color-light); }
+
+  .shadow-luxe { box-shadow: var(--shadow-luxe); }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+
+  .glass {
+    background: rgba(250, 247, 248, 0.72);
+    backdrop-filter: saturate(180%) blur(14px);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+  }
+
+  .hide-scrollbar::-webkit-scrollbar { display: none; }
+  .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}

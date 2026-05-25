@@ -30,7 +30,7 @@ export const CATEGORIES: Category[] = [
 export const SERVICES: Service[] = [
   // HAIR — Basic
   { category: "Hair", group: "Basic Hair Service", name: "Keramas", price: "25K – 35K" },
-  { category: "Hair", group: "Basic Hair Service", name: "Keramas Potong", price: "35K" },
+  { category: "Hair", group: "Basic Hair Service", name: "Keramas Potong", price: "Start from 35K" },
   { category: "Hair", group: "Basic Hair Service", name: "Keramas Cuci Potong Catok", price: "55K – 80K", badge: "Best Seller" },
   { category: "Hair", group: "Basic Hair Service", name: "Catok", price: "20K – 35K" },
   // Cuci Potong Catok Masuk
@@ -42,9 +42,9 @@ export const SERVICES: Service[] = [
   { category: "Hair", group: "Cuci Potong Curly", name: "Sedang", price: "45K – 50K" },
   { category: "Hair", group: "Cuci Potong Curly", name: "Panjang", price: "50K – 80K" },
   // Hair Treatment Lainnya
-  { category: "Hair", group: "Hair Treatment Lainnya", name: "Creambath Makarizo", price: "80K" },
-  { category: "Hair", group: "Hair Treatment Lainnya", name: "Hairmask Makarizo", price: "75K" },
-  { category: "Hair", group: "Hair Treatment Lainnya", name: "Creambath Aroma", price: "70K" },
+  { category: "Hair", group: "Hair Treatment Lainnya", name: "Creambath Makarizo", price: "Start from 80K" },
+  { category: "Hair", group: "Hair Treatment Lainnya", name: "Hairmask Makarizo", price: "Start from 75K" },
+  { category: "Hair", group: "Hair Treatment Lainnya", name: "Creambath Aroma", price: "Start from 70K" },
   { category: "Hair", group: "Hair Treatment Lainnya", name: "Treatment Ketombe", price: "80K – 150K" },
   { category: "Hair", group: "Hair Treatment Lainnya", name: "Treatment Kutu", price: "85K – 180K" },
 
@@ -57,12 +57,12 @@ export const SERVICES: Service[] = [
   { category: "Smoothing", group: "Keratin Treatment", name: "Panjang", price: "500K – 700K" },
 
   // COLORING
-  { category: "Coloring", group: "Coloring", name: "Colour Full No Bleach", price: "200K" },
-  { category: "Coloring", group: "Coloring", name: "Colour Full Bleach", price: "250K" },
-  { category: "Coloring", group: "Coloring", name: "Colour Ombre (Bleach Spruh)", price: "250K" },
-  { category: "Coloring", group: "Coloring", name: "Colour Peek A Boo (Bleach Spruh)", price: "250K" },
-  { category: "Coloring", group: "Coloring", name: "Colour Highlight", price: "300K" },
-  { category: "Coloring", group: "Coloring", name: "Colour Balayage", price: "350K", badge: "Best Seller" },
+  { category: "Coloring", group: "Coloring", name: "Colour Full No Bleach", price: "Start from 200K" },
+  { category: "Coloring", group: "Coloring", name: "Colour Full Bleach", price: "Start from 250K" },
+  { category: "Coloring", group: "Coloring", name: "Colour Ombre (Bleach Spruh)", price: "Start from 250K" },
+  { category: "Coloring", group: "Coloring", name: "Colour Peek A Boo (Bleach Spruh)", price: "Start from 250K" },
+  { category: "Coloring", group: "Coloring", name: "Colour Highlight", price: "Start from 300K" },
+  { category: "Coloring", group: "Coloring", name: "Colour Balayage", price: "Start from 350K", badge: "Best Seller" },
 
   // SKIN
   { category: "Skin", name: "Facial Natural Wardah", price: "100K", badge: "Natural" },
@@ -121,6 +121,6 @@ export const SERVICES: Service[] = [
 export const WA_NUMBER = "6285273723113";
 
 export function generateWAUrl(serviceName: string): string {
-  const text = `Halo Ebba Cosme, saya tertarik untuk booking treatment: ${serviceName}`;
+  const text = `Halo Ebba Cosme, saya tertarik untuk booking treatment: ${serviceName}. Untuk jadwal hari [Tanggal] jam [Jam] apakah tersedia?`;
   return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
 }
