@@ -36,8 +36,23 @@ dist-ssr
 out/
 build/
 
-# Production/Local env files
+# Environmental variables & secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 .env*.local
 
 # Vercel
 .vercel
+
+# System & OS Files
+[Dd]esktop.ini
+Thumbs.db
+ehthumbs.db
+.DS_Store
+
+# Tooling caches & outputs
+.eslintcache
+.stylelintcache
