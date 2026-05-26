@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.ebbacosme.biz.id/sitemap.xml
+Sitemap: https://www.ebbacosmesalon.biz.id/sitemap.xml
