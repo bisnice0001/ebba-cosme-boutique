@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     siteName: "Ebbacosme Salon & Spa By Hayyin",
   },
   alternates: {
-    canonical: "https://www.ebbacosme.com", // Ganti dengan domain aslimu nanti
+    canonical: "https://www.ebbacosmesalon.biz.id", // Ganti dengan domain aslimu nanti
   },
   icons: {
     icon: "/favicon.png",
