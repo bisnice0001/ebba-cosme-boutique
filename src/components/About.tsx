@@ -54,13 +54,13 @@ export function About() {
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         className="mx-auto mb-10 flex max-w-7xl flex-col items-start px-6 md:hidden"
       >
-        <p className="flex items-center gap-3 font-sans text-xs font-bold uppercase tracking-[0.25em] text-primary">
-          <span className="h-px w-6 bg-primary/40"></span>
+        <p className="flex items-center gap-3 font-sans text-xs font-bold uppercase tracking-[0.25em] text-[#FDE047]">
+          <span className="h-px w-6 bg-[#D4AF37]/40"></span>
           The House of Hayyin
         </p>
-        <h2 className="mt-4 font-serif text-4xl leading-[1.15] text-heading">
+        <h2 className="mt-4 font-serif text-4xl leading-[1.15] text-white">
           Where neighborhood <br />
-          meets <em className="font-serif italic text-primary">premium care.</em>
+          meets <em className="font-serif italic text-[#FDE047]">premium care.</em>
         </h2>
       </motion.div>
 
@@ -75,10 +75,10 @@ export function About() {
           className="relative mx-auto w-full max-w-[340px] sm:max-w-[380px] lg:max-w-[450px]"
         >
           {/* Decorative ambient glow */}
-          <div className="absolute -inset-2 rounded-[32px] sm:rounded-b-[180px] sm:rounded-t-[32px] md:rounded-[40px] bg-gradient-to-tr from-[#38074E]/15 via-[#D4AF37]/15 to-transparent blur-xl -z-10" />
+          <div className="absolute -inset-2 rounded-[32px] sm:rounded-b-[180px] sm:rounded-t-[32px] md:rounded-[40px] bg-gradient-to-tr from-primary/20 via-[#D4AF37]/20 to-transparent blur-xl -z-10" />
 
           {/* Refined Luxury Architectural Frame */}
-          <div className="group relative z-10 aspect-[4/5] sm:aspect-[3/4] md:aspect-[4/5] w-full overflow-hidden rounded-[28px] sm:rounded-b-[170px] sm:rounded-t-[28px] md:rounded-[36px] border-2 border-white/80 ring-1 ring-[#D4AF37]/35 bg-white/40 shadow-luxe transition-all duration-500">
+          <div className="group relative z-10 aspect-[4/5] sm:aspect-[3/4] md:aspect-[4/5] w-full overflow-hidden rounded-[28px] sm:rounded-b-[170px] sm:rounded-t-[28px] md:rounded-[36px] border-2 border-white/80 ring-1 ring-[#D4AF37]/40 bg-card shadow-luxe transition-all duration-500">
             <Image
               src="/about.png"
               alt="Interior Aesthetic Hayyin Muslimah Salon & Spa khusus wanita di Malang"
@@ -89,7 +89,7 @@ export function About() {
             {/* Inner luxury border */}
             <div className="pointer-events-none absolute inset-0 rounded-[inherit] border border-white/30" />
             {/* Soft gradient bottom for badge contrast */}
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#2A053D]/40 via-transparent to-transparent sm:hidden" />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#150320]/80 via-transparent to-transparent sm:hidden" />
           </div>
 
           {/* Floating Aesthetic Badge */}
@@ -98,17 +98,17 @@ export function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="absolute -bottom-4 left-3 right-3 z-20 flex items-center justify-between rounded-2xl border border-white/80 bg-white/95 px-4 py-2.5 shadow-luxe backdrop-blur-md sm:-bottom-5 sm:-right-4 sm:left-auto sm:w-auto"
+            className="absolute -bottom-4 left-3 right-3 z-20 flex items-center justify-between rounded-2xl border border-purple-500/30 bg-[#220731]/95 px-4 py-2.5 shadow-luxe backdrop-blur-md sm:-bottom-5 sm:-right-4 sm:left-auto sm:w-auto"
           >
             <div className="flex items-center gap-2.5">
-              <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-primary/10 text-primary">
+              <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-primary/20 text-[#FDE047] border border-purple-500/30">
                 <Sparkles size={16} />
               </div>
               <div>
-                <p className="font-sans text-[10px] font-bold uppercase tracking-wider text-primary">
+                <p className="font-sans text-[10px] font-bold uppercase tracking-wider text-[#FDE047]">
                   Higienis & Halal
                 </p>
-                <p className="font-serif text-xs font-semibold text-heading">
+                <p className="font-serif text-xs font-semibold text-white">
                   100% Khusus Muslimah
                 </p>
               </div>
@@ -129,18 +129,18 @@ export function About() {
             Hanya muncul di layar menengah ke atas (hidden md:flex).
           */}
           <div className="hidden flex-col items-start md:flex">
-            <p className="flex items-center gap-3 font-sans text-xs font-bold uppercase tracking-[0.25em] text-primary">
-              <span className="h-px w-8 bg-primary/40"></span>
+            <p className="flex items-center gap-3 font-sans text-xs font-bold uppercase tracking-[0.25em] text-[#FDE047]">
+              <span className="h-px w-8 bg-[#D4AF37]/40"></span>
               The House of Hayyin
             </p>
-            <h2 className="mt-5 font-serif text-4xl leading-[1.15] text-heading md:text-5xl">
+            <h2 className="mt-5 font-serif text-4xl leading-[1.15] text-white md:text-5xl">
               Where neighborhood <br className="hidden lg:block" />
-              meets <em className="font-serif italic text-primary">premium care.</em>
+              meets <em className="font-serif italic text-[#FDE047]">premium care.</em>
             </h2>
           </div>
           
           <p className="mt-0 font-sans text-base leading-relaxed text-body md:mt-6 md:text-lg">
-            Tersembunyi di tengah tenangnya Karangploso, <strong className="font-medium text-heading">Hayyin Muslimah Salon & Spa</strong> menghadirkan ritual *urban-spa* eksklusif untuk para wanita Malang. Kami merancang ruang estetika ini dengan harga yang transparan, pelayanan tulus, dan privasi penuh.
+            Tersembunyi di tengah tenangnya Karangploso, <strong className="font-medium text-white">Hayyin Muslimah Salon & Spa</strong> menghadirkan ritual *urban-spa* eksklusif untuk para wanita Malang. Kami merancang ruang estetika ini dengan harga yang transparan, pelayanan tulus, dan privasi penuh.
           </p>
 
           {/* PILLARS / VALUES */}
@@ -155,15 +155,15 @@ export function About() {
                 className="group flex items-start gap-5"
               >
                 {/* Icon Wrapper with Hover Effect */}
-                <div className="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-secondary/20 transition-colors duration-300 group-hover:bg-primary/10">
-                  <Icon size={22} className="relative z-10 text-primary transition-transform duration-300 group-hover:scale-110" />
+                <div className="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-purple-500/30 bg-[#260938] text-[#FDE047] transition-all duration-300 group-hover:scale-105 group-hover:border-[#D4AF37]/50 group-hover:bg-primary/20">
+                  <Icon size={22} className="relative z-10 text-[#FDE047] transition-transform duration-300 group-hover:scale-110" />
                 </div>
                 
                 <div className="pt-1.5">
-                  <h3 className="font-serif text-[1.15rem] font-medium text-heading transition-colors group-hover:text-primary">
+                  <h3 className="font-serif text-[1.15rem] font-medium text-white transition-colors group-hover:text-[#FDE047]">
                     {title}
                   </h3>
-                  <p className="mt-1.5 font-sans text-sm leading-relaxed text-body/90 md:text-base">
+                  <p className="mt-1.5 font-sans text-sm leading-relaxed text-body md:text-base">
                     {body}
                   </p>
                 </div>

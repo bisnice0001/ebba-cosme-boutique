@@ -40,25 +40,25 @@ export function Hero() {
         >
           {/* SEO & Trust Badges */}
           <div className="flex flex-wrap items-center justify-center gap-3 md:justify-start">
-            <h2 className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
-              <Sparkles size={14} className="text-[#D4AF37]" />
+            <h2 className="inline-flex items-center gap-2 rounded-full border border-[#D4AF37]/50 bg-[#D4AF37]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#FDE047]">
+              <Sparkles size={14} className="text-[#FDE047]" />
               Cantik · Sehat · Berkah
             </h2>
-            <div className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card/90 px-4 py-1.5 text-xs font-medium text-heading backdrop-blur-sm shadow-xs">
+            <div className="inline-flex items-center gap-1.5 rounded-full border border-purple-500/25 bg-white/5 px-4 py-1.5 text-xs font-medium text-white backdrop-blur-sm shadow-xs">
               <Star size={14} className="fill-[#F59E0B] text-[#F59E0B]" />
-              4.5 / 5 <span className="text-body/70">(Google Reviews)</span>
+              4.5 / 5 <span className="text-purple-200/70">(Google Reviews)</span>
             </div>
           </div>
 
           {/* H1 Heading */}
-          <h2 className="mt-8 font-serif text-5xl leading-[1.15] text-heading md:text-6xl lg:text-7xl">
+          <h2 className="mt-8 font-serif text-5xl leading-[1.15] text-white md:text-6xl lg:text-7xl">
             A quiet ritual <br />
-            of <em className="font-serif italic text-primary">becoming.</em>
+            of <em className="font-serif italic text-[#FDE047]">becoming.</em>
           </h2>
 
           {/* Deskripsi */}
           <p className="mt-6 max-w-lg font-sans text-base leading-relaxed text-body md:text-lg">
-            Selamat datang di <strong className="font-medium text-heading">Hayyin Muslimah Salon & Spa</strong>, sanctuary kecantikan khusus wanita di Karangploso, Malang. Nikmati ritual unggulan <strong className="font-medium text-heading">Japanese Head Spa</strong>, <strong className="font-medium text-heading">Korean Facial</strong>, perawatan rambut, lulur spa, dan <strong className="font-medium text-heading">Paket Bundling Hemat</strong> dalam suasana privat yang tenang dan nyaman.
+            Selamat datang di <strong className="font-medium text-white">Hayyin Muslimah Salon & Spa</strong>, sanctuary kecantikan khusus wanita di Karangploso, Malang. Nikmati ritual unggulan <strong className="font-medium text-white">Japanese Head Spa</strong>, <strong className="font-medium text-white">Korean Facial</strong>, perawatan rambut, lulur spa, dan <strong className="font-medium text-white">Paket Bundling Hemat</strong> dalam suasana privat yang tenang dan nyaman.
           </p>
 
           {/* Call to Actions */}
@@ -68,21 +68,21 @@ export function Hero() {
               href={generateWAUrl("Halo admin Hayyin Muslimah Salon & Spa, saya ingin reservasi/konsultasi treatment.")}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex h-12 w-full items-center justify-center rounded-[8px] bg-primary px-8 font-sans text-sm font-medium text-primary-foreground shadow-luxe transition-all duration-300 hover:scale-[1.02] hover:bg-accent focus:outline-none focus:ring-2 focus:ring-primary sm:w-auto md:h-14"
+              className="inline-flex h-12 w-full items-center justify-center rounded-[10px] bg-gradient-to-r from-[#D4AF37] via-[#F59E0B] to-[#D4AF37] px-8 font-sans text-sm font-bold text-[#1E042B] shadow-luxe transition-all duration-300 hover:scale-[1.02] hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#D4AF37] sm:w-auto md:h-14"
             >
               Book via WhatsApp
             </a>
             <a
               href="#treatments"
-              className="inline-flex h-12 w-full items-center justify-center rounded-[8px] border border-border bg-transparent px-8 font-sans text-sm font-medium text-heading transition-colors duration-300 hover:border-primary hover:text-primary focus:outline-none sm:w-auto md:h-14"
+              className="inline-flex h-12 w-full items-center justify-center rounded-[10px] border border-white/20 bg-white/5 px-8 font-sans text-sm font-medium text-white transition-all duration-300 hover:border-[#D4AF37]/60 hover:bg-white/10 hover:text-[#FDE047] focus:outline-none sm:w-auto md:h-14"
             >
               Explore Treatments
             </a>
           </div>
 
           {/* Location / Local SEO Signal */}
-          <div className="mt-10 flex flex-col items-center gap-3 font-sans text-sm text-body/70 sm:flex-row md:items-start">
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary/20 text-primary">
+          <div className="mt-10 flex flex-col items-center gap-3 font-sans text-sm text-body/80 sm:flex-row md:items-start">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white/5 text-[#FDE047] border border-white/10">
               <MapPin size={16} />
             </div>
             <address className="text-center not-italic md:text-left">
@@ -99,7 +99,7 @@ export function Hero() {
           className="relative mx-auto w-full max-w-[340px] sm:max-w-[380px] lg:max-w-[450px]"
         >
           {/* Main Frame with refined architectural curvature */}
-          <div className="group relative z-10 aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden rounded-[28px] sm:rounded-t-[180px] sm:rounded-b-[28px] border-2 border-white/80 ring-1 ring-[#D4AF37]/35 bg-muted shadow-luxe">
+          <div className="group relative z-10 aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden rounded-[28px] sm:rounded-t-[180px] sm:rounded-b-[28px] border-2 border-white/80 ring-1 ring-[#D4AF37]/40 bg-card shadow-luxe">
             <Image
               src="/hero.jpeg"
               alt="Hayyin Muslimah Salon & Spa - Salon Kecantikan Wanita, Hair Treatment, dan Spa di Karangploso Malang"
@@ -111,7 +111,7 @@ export function Hero() {
             {/* Inner border yang memberikan kesan luxury */}
             <div className="pointer-events-none absolute inset-0 rounded-[inherit] border border-white/30" />
             {/* Bottom gradient on mobile to enhance floating badge readability */}
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#2A053D]/50 via-transparent to-transparent sm:hidden" />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#150320]/80 via-transparent to-transparent sm:hidden" />
           </div>
 
           {/* Floating Aesthetic Chip - Fully responsive for mobile & desktop */}
@@ -119,15 +119,15 @@ export function Hero() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-            className="absolute -bottom-4 left-3 right-3 z-20 flex items-center justify-between rounded-2xl border border-white/70 bg-white/95 px-4 py-3 shadow-luxe backdrop-blur-md sm:-bottom-6 sm:-left-6 sm:right-auto sm:w-64 sm:flex-col sm:items-start sm:p-5"
+            className="absolute -bottom-4 left-3 right-3 z-20 flex items-center justify-between rounded-2xl border border-purple-500/30 bg-[#220731]/95 px-4 py-3 shadow-luxe backdrop-blur-md sm:-bottom-6 sm:-left-6 sm:right-auto sm:w-64 sm:flex-col sm:items-start sm:p-5"
           >
             <div className="flex items-center gap-2">
               <div className="h-2 w-2 animate-pulse rounded-full bg-[#10B981]" />
-              <span className="font-sans text-[10px] font-bold tracking-widest text-primary uppercase">
+              <span className="font-sans text-[10px] font-bold tracking-widest text-[#FDE047] uppercase">
                 100% Khusus Wanita
               </span>
             </div>
-            <p className="font-serif text-sm font-semibold text-heading sm:mt-1 sm:text-base leading-snug">
+            <p className="font-serif text-sm font-semibold text-white sm:mt-1 sm:text-base leading-snug">
               Private Sanctuary
             </p>
           </motion.div>

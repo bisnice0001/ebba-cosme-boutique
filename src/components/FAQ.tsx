@@ -66,13 +66,13 @@ export function FAQ() {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="mb-16 text-center"
         >
-          <p className="flex items-center justify-center gap-3 font-sans text-xs font-bold uppercase tracking-[0.25em] text-primary">
-            <span className="h-px w-6 bg-primary/40"></span>
+          <p className="flex items-center justify-center gap-3 font-sans text-xs font-bold uppercase tracking-[0.25em] text-[#FDE047]">
+            <span className="h-px w-6 bg-[#D4AF37]/40"></span>
             Got Questions?
-            <span className="h-px w-6 bg-primary/40"></span>
+            <span className="h-px w-6 bg-[#D4AF37]/40"></span>
           </p>
-          <h2 className="mt-4 font-serif text-3xl text-heading md:text-5xl">
-            Frequently Asked <em className="font-serif italic text-primary">Questions</em>
+          <h2 className="mt-4 font-serif text-3xl text-white md:text-5xl">
+            Frequently Asked <em className="font-serif italic text-[#FDE047]">Questions</em>
           </h2>
         </motion.div>
 
@@ -87,8 +87,8 @@ export function FAQ() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.6, delay: idx * 0.1, ease: [0.22, 1, 0.36, 1] }}
-                className={`overflow-hidden rounded-[16px] border bg-card shadow-soft transition-colors duration-500 ${
-                  isOpen ? "border-primary/40" : "border-border hover:border-primary/20"
+                className={`overflow-hidden rounded-[20px] border bg-card shadow-soft transition-colors duration-500 ${
+                  isOpen ? "border-[#D4AF37]/60 bg-secondary/40" : "border-border/80 hover:border-purple-500/40"
                 }`}
               >
                 <button
@@ -96,7 +96,7 @@ export function FAQ() {
                   className="flex w-full items-center justify-between px-6 py-6 text-left focus:outline-none md:px-8"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-serif text-[1.1rem] font-medium leading-snug text-heading pr-4 md:text-lg">
+                  <span className="font-serif text-[1.1rem] font-medium leading-snug text-white pr-4 md:text-lg">
                     {faq.question}
                   </span>
                   
@@ -105,7 +105,7 @@ export function FAQ() {
                     animate={{ rotate: isOpen ? 45 : 0 }}
                     transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
                     className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-colors duration-500 ${
-                      isOpen ? "border-primary bg-primary text-primary-foreground" : "border-border text-primary"
+                      isOpen ? "border-[#D4AF37] bg-gradient-to-r from-[#D4AF37] to-[#F59E0B] text-[#1E042B]" : "border-purple-500/30 bg-white/5 text-[#FDE047]"
                     }`}
                   >
                     <Plus size={18} strokeWidth={2} />
@@ -120,7 +120,7 @@ export function FAQ() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
                     >
-                      <div className="px-6 pb-8 pt-2 font-sans text-sm leading-relaxed text-body/90 md:px-8 md:text-base">
+                      <div className="px-6 pb-8 pt-2 font-sans text-sm leading-relaxed text-body md:px-8 md:text-base">
                         {faq.answer}
                       </div>
                     </motion.div>

@@ -15,8 +15,8 @@ export function Visit() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="p-8 md:p-12">
-              <p className="text-xs uppercase tracking-[0.32em] text-primary">Visit Us</p>
-              <h2 className="mt-3 font-serif text-3xl text-heading md:text-4xl">
+              <p className="text-xs uppercase tracking-[0.32em] text-[#FDE047] font-semibold">Visit Us</p>
+              <h2 className="mt-3 font-serif text-3xl text-white md:text-4xl">
                 Reserve your moment.
               </h2>
               <p className="mt-4 text-body">
@@ -26,19 +26,21 @@ export function Visit() {
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li className="flex gap-3 text-body">
-                  <MapPin size={18} className="mt-0.5 text-primary" />
-                  Ruko Kartanegara, <br />
-                  Jl. Raya Karangploso kav 22, RT.7/RW.2,<br />
-                  Karangploso, Girimoyo, Kec. Karang Ploso, <br />
-                  Kabupaten Malang, Jawa Timur 65152
+                  <MapPin size={18} className="mt-0.5 text-[#FDE047] shrink-0" />
+                  <span>
+                    Ruko Kartanegara, <br />
+                    Jl. Raya Karangploso kav 22, RT.7/RW.2,<br />
+                    Karangploso, Girimoyo, Kec. Karang Ploso, <br />
+                    Kabupaten Malang, Jawa Timur 65152
+                  </span>
                 </li>
                 <li className="flex gap-3 text-body">
-                  <Clock size={18} className="mt-0.5 text-primary" />
-                  Open Daily · 09.00 – 20.00 WIB
+                  <Clock size={18} className="mt-0.5 text-[#FDE047] shrink-0" />
+                  <span>Open Daily · 09.00 – 20.00 WIB</span>
                 </li>
                 <li className="flex gap-3 text-body">
-                  <Phone size={18} className="mt-0.5 text-primary" />
-                  +{WA_NUMBER}
+                  <Phone size={18} className="mt-0.5 text-[#FDE047] shrink-0" />
+                  <span>+{WA_NUMBER}</span>
                 </li>
               </ul>
 
@@ -46,7 +48,7 @@ export function Visit() {
                 href={generateWAUrl("Halo admin Hayyin Muslimah Salon & Spa, saya ingin konsultasi dan booking treatment.")}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-8 inline-flex h-12 items-center rounded-md bg-primary px-7 text-sm font-medium text-primary-foreground shadow-soft transition-all hover:scale-[1.02] hover:bg-accent"
+                className="mt-8 inline-flex h-12 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#D4AF37] via-[#F59E0B] to-[#D4AF37] px-8 text-sm font-bold text-[#1E042B] shadow-luxe transition-all hover:scale-[1.02] hover:shadow-xl"
               >
                 Chat us on WhatsApp
               </a>

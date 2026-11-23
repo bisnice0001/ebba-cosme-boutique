@@ -66,10 +66,10 @@ export function CategoryFilter({
               aria-selected={isActive}
               className={`group relative inline-flex h-11 shrink-0 items-center gap-2 rounded-full px-5 font-sans text-[0.88rem] font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 ${
                 isActive
-                  ? "border border-transparent text-white shadow-md shadow-primary/20"
+                  ? "border border-purple-400/40 text-white shadow-md shadow-primary/30"
                   : isBundling
-                  ? "border border-[#D4AF37]/60 bg-[#FAF4DD]/50 text-heading hover:border-[#D4AF37] hover:bg-[#FAF4DD]"
-                  : "border border-border/80 bg-card text-body hover:border-primary/40 hover:bg-secondary/40 hover:text-heading"
+                  ? "border border-[#D4AF37]/60 bg-[#D4AF37]/15 text-[#FDE047] hover:border-[#D4AF37] hover:bg-[#D4AF37]/25"
+                  : "border border-border/80 bg-card text-body hover:border-primary/50 hover:bg-secondary/60 hover:text-white"
               }`}
             >
               {isActive && (
@@ -77,8 +77,8 @@ export function CategoryFilter({
                   layoutId="activeCategoryFilter"
                   className={`absolute inset-0 z-0 rounded-full ${
                     isBundling
-                      ? "bg-gradient-to-r from-primary via-[#8A1EA8] to-primary"
-                      : "bg-primary"
+                      ? "bg-gradient-to-r from-primary via-[#C084FC] to-primary"
+                      : "bg-gradient-to-r from-primary to-[#7E22CE]"
                   }`}
                   initial={false}
                   transition={{ type: "spring", stiffness: 400, damping: 30 }}
@@ -94,7 +94,7 @@ export function CategoryFilter({
                       ? "text-[#FDE047] scale-110"
                       : "text-white scale-110"
                     : isBundling
-                    ? "text-[#B45309] group-hover:scale-110"
+                    ? "text-[#FDE047] group-hover:scale-110"
                     : "text-primary group-hover:scale-110"
                 }`}
               />
@@ -102,7 +102,7 @@ export function CategoryFilter({
               <span className="relative z-10 tracking-wide">{cat}</span>
 
               {isBundling && !isActive && (
-                <span className="relative z-10 rounded-full bg-[#D4AF37] px-1.5 py-0.5 text-[0.62rem] font-bold uppercase tracking-wider text-white">
+                <span className="relative z-10 rounded-full bg-[#D4AF37] px-1.5 py-0.5 text-[0.62rem] font-bold uppercase tracking-wider text-[#1E042B]">
                   Hemat
                 </span>
               )}

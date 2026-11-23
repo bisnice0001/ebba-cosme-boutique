@@ -12,15 +12,15 @@ export function WhatsAppFloat() {
       */}
       <motion.div
         animate={{
-          scale: [1, 1.2, 1],
-          opacity: [0.3, 0, 0.3],
+          scale: [1, 1.25, 1],
+          opacity: [0.35, 0, 0.35],
         }}
         transition={{
           duration: 2.5,
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute inset-0 rounded-full bg-primary"
+        className="absolute inset-0 rounded-full bg-[#25D366]"
       />
 
       <motion.a
@@ -32,7 +32,7 @@ export function WhatsAppFloat() {
         transition={{ delay: 1, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="relative flex h-14 items-center gap-3 rounded-full bg-primary px-5 text-sm font-medium text-primary-foreground shadow-luxe transition-colors hover:bg-heading focus:outline-none focus:ring-4 focus:ring-primary/30"
+        className="relative flex h-14 items-center gap-3 rounded-full bg-[#25D366] px-5 text-sm font-semibold text-white shadow-luxe transition-colors hover:bg-[#1ebd59] focus:outline-none focus:ring-4 focus:ring-[#25D366]/40"
         aria-label="Konsultasi dan Booking via WhatsApp di Hayyin Muslimah Salon & Spa"
         title="Hubungi Admin Hayyin Muslimah Salon & Spa"
       >

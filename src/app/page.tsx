@@ -39,12 +39,12 @@ export default function Page() {
             transition={{ duration: 0.7 }}
             className="text-center"
           >
-            <p className="text-xs uppercase tracking-[0.32em] text-primary">Price List & Perawatan</p>
-            <h2 className="mt-4 font-serif text-4xl text-heading md:text-6xl">
-              Relax · Beauty · <em className="text-primary italic">Comfort</em>
+            <p className="text-xs uppercase tracking-[0.32em] text-[#FDE047] font-semibold">Price List & Perawatan</p>
+            <h2 className="mt-4 font-serif text-4xl text-white md:text-6xl">
+              Relax · Beauty · <em className="text-[#FDE047] italic">Comfort</em>
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-body md:text-base">
-              Rangkaian perawatan lengkap khusus wanita dari potong rambut, styling, hair spa, facial, body treatment, hingga <strong>Japanese Head Spa</strong> & <strong>Paket Bundling Hemat</strong>.
+              Rangkaian perawatan lengkap khusus wanita dari potong rambut, styling, hair spa, facial, body treatment, hingga <strong className="font-medium text-white">Japanese Head Spa</strong> & <strong className="font-medium text-white">Paket Bundling Hemat</strong>.
             </p>
           </motion.div>
 

@@ -50,13 +50,13 @@ export function Testimonials() {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="text-center"
         >
-          <p className="flex items-center justify-center gap-3 font-sans text-xs font-bold uppercase tracking-[0.25em] text-primary">
-            <span className="h-px w-6 bg-primary/40"></span>
+          <p className="flex items-center justify-center gap-3 font-sans text-xs font-bold uppercase tracking-[0.25em] text-[#FDE047]">
+            <span className="h-px w-6 bg-[#D4AF37]/40"></span>
             Testimonials
-            <span className="h-px w-6 bg-primary/40"></span>
+            <span className="h-px w-6 bg-[#D4AF37]/40"></span>
           </p>
-          <h2 className="mt-4 font-serif text-3xl text-heading md:text-5xl">
-            Words from our <em className="font-serif italic text-primary">muses.</em>
+          <h2 className="mt-4 font-serif text-3xl text-white md:text-5xl">
+            Words from our <em className="font-serif italic text-[#FDE047]">muses.</em>
           </h2>
         </motion.div>
 
@@ -69,10 +69,10 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.8, delay: idx * 0.15, ease: [0.22, 1, 0.36, 1] }}
-              className="group relative flex flex-col rounded-[16px] border border-border bg-card/60 p-8 shadow-soft backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-card hover:shadow-luxe"
+              className="group relative flex flex-col rounded-[20px] border border-border/80 bg-card p-8 shadow-soft backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-luxe"
             >
               {/* Decorative Background Quote Icon */}
-              <div className="absolute right-6 top-6 text-secondary/10 transition-colors duration-500 group-hover:text-secondary/20">
+              <div className="absolute right-6 top-6 text-white/5 transition-colors duration-500 group-hover:text-primary/10">
                 <Quote size={64} className="rotate-180" />
               </div>
 
@@ -85,7 +85,7 @@ export function Testimonials() {
 
               {/* Review Text */}
               <blockquote className="relative z-10 flex-1">
-                <p className="font-sans text-[0.95rem] italic leading-relaxed text-body/90 md:text-base">
+                <p className="font-sans text-[0.95rem] italic leading-relaxed text-body md:text-base">
                   "{item.review}"
                 </p>
               </blockquote>
@@ -93,11 +93,11 @@ export function Testimonials() {
               {/* Author */}
               <figcaption className="relative z-10 mt-8 flex items-center gap-4 border-t border-border/50 pt-6">
                 {/* Initial Avatar */}
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-secondary/30 font-serif text-sm font-semibold text-primary">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-purple-500/30 bg-[#280938] font-serif text-sm font-semibold text-[#FDE047]">
                   {item.name.charAt(0)}
                 </div>
                 <div>
-                  <cite className="font-serif text-lg font-medium not-italic text-heading">
+                  <cite className="font-serif text-lg font-medium not-italic text-white">
                     {item.name}
                   </cite>
                   <p className="font-sans text-xs text-body/70">Verified Client</p>

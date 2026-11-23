@@ -51,14 +51,14 @@ export function WhyChooseUs() {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto max-w-2xl text-center"
         >
-          <p className="flex items-center justify-center gap-3 font-sans text-xs font-bold uppercase tracking-[0.25em] text-primary">
-            <span className="h-px w-6 bg-primary/40"></span>
+          <p className="flex items-center justify-center gap-3 font-sans text-xs font-bold uppercase tracking-[0.25em] text-[#FDE047]">
+            <span className="h-px w-6 bg-[#D4AF37]/40"></span>
             Why Hayyin
-            <span className="h-px w-6 bg-primary/40"></span>
+            <span className="h-px w-6 bg-[#D4AF37]/40"></span>
           </p>
-          <h2 className="mt-5 font-serif text-4xl leading-tight text-heading md:text-5xl">
+          <h2 className="mt-5 font-serif text-4xl leading-tight text-white md:text-5xl">
             A sanctuary designed <br className="hidden sm:block" />
-            around <em className="font-serif italic text-primary">you.</em>
+            around <em className="font-serif italic text-[#FDE047]">you.</em>
           </h2>
           <p className="mt-5 font-sans text-base leading-relaxed text-body md:text-lg">
             Lebih dari sekadar salon kecantikan. Kami memadukan kemewahan, kenyamanan lokal, dan keahlian untuk membuat Anda merasa luar biasa dari luar dan dalam.
@@ -76,20 +76,20 @@ export function WhyChooseUs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.8, delay: idx * 0.15, ease: [0.22, 1, 0.36, 1] }}
-                className="group relative flex flex-col items-center rounded-[16px] border border-border bg-card/50 p-8 text-center transition-all duration-500 hover:-translate-y-1 hover:bg-card hover:shadow-luxe"
+                className="group relative flex flex-col items-center rounded-[20px] border border-border/80 bg-card p-8 text-center transition-all duration-500 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-luxe"
               >
                 {/* Decorative top border on hover */}
-                <div className="absolute inset-x-0 top-0 h-1 w-full scale-x-0 rounded-t-[16px] bg-primary transition-transform duration-500 group-hover:scale-x-100" />
+                <div className="absolute inset-x-0 top-0 h-1 w-full scale-x-0 rounded-t-[20px] bg-gradient-to-r from-primary via-[#D4AF37] to-primary transition-transform duration-500 group-hover:scale-x-100" />
                 
-                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/20 text-primary transition-transform duration-500 group-hover:scale-110 group-hover:bg-primary/10">
-                  <Icon size={26} strokeWidth={1.5} />
+                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full border border-purple-500/30 bg-[#260938] text-[#FDE047] transition-all duration-500 group-hover:scale-110 group-hover:border-[#D4AF37]/50 group-hover:bg-primary/20">
+                  <Icon size={26} strokeWidth={1.5} className="text-[#FDE047]" />
                 </div>
                 
-                <h3 className="font-serif text-xl font-medium text-heading">
+                <h3 className="font-serif text-xl font-medium text-white transition-colors group-hover:text-[#FDE047]">
                   {reason.title}
                 </h3>
                 
-                <p className="mt-4 font-sans text-sm leading-relaxed text-body/90 md:text-base">
+                <p className="mt-4 font-sans text-sm leading-relaxed text-body md:text-base">
                   {reason.description}
                 </p>
               </motion.div>

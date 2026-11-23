@@ -59,10 +59,10 @@ export function Navbar() {
             className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105 md:h-12"
           />
           <div className="flex flex-col justify-center">
-            <span className="font-serif text-[1.25rem] font-semibold leading-tight text-heading tracking-tight md:text-[1.45rem]">
+            <span className="font-serif text-[1.25rem] font-semibold leading-tight text-white tracking-tight md:text-[1.45rem]">
               Hayyin
             </span>
-            <span className="mt-0.5 font-sans text-[0.6rem] font-bold uppercase tracking-[0.2em] text-primary md:text-[0.64rem]">
+            <span className="mt-0.5 font-sans text-[0.6rem] font-bold uppercase tracking-[0.2em] text-[#D4AF37] md:text-[0.64rem]">
               Muslimah Salon & Spa
             </span>
           </div>
@@ -74,11 +74,11 @@ export function Navbar() {
             <a
               key={n.href}
               href={n.href}
-              className="group relative py-2 font-sans text-sm font-medium text-body transition-colors hover:text-heading focus:outline-none"
+              className="group relative py-2 font-sans text-sm font-medium text-body transition-colors hover:text-white focus:outline-none"
             >
               {n.label}
               {/* Animated Underline Effect */}
-              <span className="absolute bottom-0 left-0 h-[1.5px] w-0 bg-primary/60 transition-all duration-300 ease-out group-hover:w-full" />
+              <span className="absolute bottom-0 left-0 h-[1.5px] w-0 bg-[#D4AF37] transition-all duration-300 ease-out group-hover:w-full" />
             </a>
           ))}
         </nav>
@@ -88,7 +88,7 @@ export function Navbar() {
           href={generateWAUrl("Halo admin Hayyin Muslimah Salon & Spa, saya ingin reservasi treatment.")}
           target="_blank"
           rel="noreferrer"
-          className="hidden h-11 items-center justify-center rounded-[8px] bg-primary px-7 font-sans text-sm font-medium text-primary-foreground shadow-soft transition-all duration-300 hover:scale-[1.02] hover:bg-accent focus:outline-none focus:ring-2 focus:ring-primary md:inline-flex"
+          className="hidden h-11 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#D4AF37] via-[#F59E0B] to-[#D4AF37] px-7 font-sans text-sm font-bold text-[#1E042B] shadow-luxe transition-all duration-300 hover:scale-[1.03] hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#D4AF37] md:inline-flex"
         >
           Book Now
         </a>
@@ -96,7 +96,7 @@ export function Navbar() {
         {/* MOBILE MENU TOGGLE */}
         <button
           onClick={() => setOpen((v) => !v)}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-secondary/10 text-heading transition-colors hover:bg-secondary/20 focus:outline-none md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20 focus:outline-none md:hidden"
           aria-expanded={open}
           aria-label={open ? "Close menu" : "Open menu"}
         >
@@ -114,7 +114,7 @@ export function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="overflow-hidden border-t border-border/50 glass md:hidden"
+            className="overflow-hidden border-t border-purple-500/20 glass md:hidden"
           >
             <nav className="flex flex-col gap-2 px-6 pb-6 pt-4" aria-label="Mobile Navigation">
               {NAV.map((n, idx) => (
@@ -125,7 +125,7 @@ export function Navbar() {
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: idx * 0.1, duration: 0.3 }}
-                  className="rounded-[8px] px-4 py-3 font-serif text-lg font-medium text-heading transition-colors hover:bg-secondary/10"
+                  className="rounded-[8px] px-4 py-3 font-serif text-lg font-medium text-white transition-colors hover:bg-white/10 hover:text-[#D4AF37]"
                 >
                   {n.label}
                 </motion.a>
@@ -142,7 +142,7 @@ export function Navbar() {
                   target="_blank"
                   rel="noreferrer"
                   onClick={() => setOpen(false)}
-                  className="inline-flex h-12 w-full items-center justify-center rounded-[8px] bg-primary font-sans text-sm font-semibold text-primary-foreground shadow-soft transition-all hover:bg-accent"
+                  className="inline-flex h-12 w-full items-center justify-center rounded-[10px] bg-gradient-to-r from-[#D4AF37] via-[#F59E0B] to-[#D4AF37] font-sans text-sm font-bold text-[#1E042B] shadow-luxe transition-all hover:brightness-110"
                 >
                   Book Now via WhatsApp
                 </a>

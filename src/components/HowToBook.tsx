@@ -46,13 +46,13 @@ export function HowToBook() {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="text-center"
         >
-          <p className="flex items-center justify-center gap-3 font-sans text-xs font-bold uppercase tracking-[0.25em] text-primary">
-            <span className="h-px w-4 bg-primary/40"></span>
+          <p className="flex items-center justify-center gap-3 font-sans text-xs font-bold uppercase tracking-[0.25em] text-[#FDE047]">
+            <span className="h-px w-4 bg-[#D4AF37]/40"></span>
             Simple Process
-            <span className="h-px w-4 bg-primary/40"></span>
+            <span className="h-px w-4 bg-[#D4AF37]/40"></span>
           </p>
-          <h2 className="mt-4 font-serif text-3xl text-heading md:text-5xl">
-            How to <em className="font-serif italic text-primary">Book.</em>
+          <h2 className="mt-4 font-serif text-3xl text-white md:text-5xl">
+            How to <em className="font-serif italic text-[#FDE047]">Book.</em>
           </h2>
         </motion.div>
 
@@ -71,19 +71,19 @@ export function HowToBook() {
               >
                 {/* Connecting Line for desktop (Dibuat dashed/putus-putus agar lebih manis) */}
                 {idx !== STEPS.length - 1 && (
-                  <div className="absolute left-1/2 top-8 z-0 hidden w-full border-t border-dashed border-primary/30 md:block" />
+                  <div className="absolute left-1/2 top-8 z-0 hidden w-full border-t border-dashed border-purple-500/30 md:block" />
                 )}
                 
                 {/* Step Icon */}
-                <div className="relative z-10 mb-6 flex h-16 w-16 items-center justify-center rounded-full border border-border bg-card text-primary shadow-soft transition-transform duration-500 hover:scale-110 hover:bg-secondary/10">
-                  <Icon size={24} strokeWidth={1.5} />
+                <div className="relative z-10 mb-6 flex h-16 w-16 items-center justify-center rounded-full border border-purple-500/30 bg-[#260938] text-[#FDE047] shadow-soft transition-all duration-500 hover:scale-110 hover:border-[#D4AF37]/50 hover:bg-primary/20">
+                  <Icon size={24} strokeWidth={1.5} className="text-[#FDE047]" />
                 </div>
                 
                 {/* Step Text */}
-                <h3 className="font-serif text-xl font-medium text-heading">
+                <h3 className="font-serif text-xl font-medium text-white">
                   {step.title}
                 </h3>
-                <p className="mt-3 max-w-[280px] font-sans text-sm leading-relaxed text-body/90 md:text-base">
+                <p className="mt-3 max-w-[280px] font-sans text-sm leading-relaxed text-body md:text-base">
                   {step.description}
                 </p>
               </motion.div>

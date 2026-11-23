@@ -130,16 +130,16 @@ export function TreatmentList({ activeCategory }: { activeCategory: Category }) 
                 <div>
                   {/* Tier & Savings Badge */}
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="rounded-full bg-secondary/80 px-3 py-1 font-sans text-[0.7rem] font-bold uppercase tracking-wider text-primary">
+                    <span className="rounded-full border border-primary/30 bg-primary/20 px-3 py-1 font-sans text-[0.7rem] font-bold uppercase tracking-wider text-purple-200">
                       {pkg.tier}
                     </span>
-                    <span className="rounded-full bg-[#10B981]/15 px-2.5 py-0.5 font-sans text-[0.7rem] font-bold text-[#059669]">
+                    <span className="rounded-full border border-emerald-500/30 bg-emerald-500/15 px-2.5 py-0.5 font-sans text-[0.7rem] font-bold text-emerald-400">
                       {pkg.savings}
                     </span>
                   </div>
 
                   {/* Title */}
-                  <h4 className="mt-4 font-serif text-2xl font-semibold leading-tight text-heading">
+                  <h4 className="mt-4 font-serif text-2xl font-semibold leading-tight text-white">
                     {pkg.name}
                   </h4>
 
@@ -149,14 +149,14 @@ export function TreatmentList({ activeCategory }: { activeCategory: Category }) 
                   </p>
 
                   {/* Items Included */}
-                  <div className="mt-5 rounded-xl border border-border/60 bg-[#FAF6FD] p-4">
-                    <p className="font-sans text-[0.72rem] font-bold uppercase tracking-wider text-primary">
+                  <div className="mt-5 rounded-xl border border-purple-500/20 bg-[#180324] p-4">
+                    <p className="font-sans text-[0.72rem] font-bold uppercase tracking-wider text-[#FDE047]">
                       Rangkaian Perawatan:
                     </p>
-                    <ul className="mt-2.5 space-y-2 text-xs text-heading md:text-[0.85rem]">
+                    <ul className="mt-2.5 space-y-2 text-xs text-purple-100 md:text-[0.85rem]">
                       {pkg.items.map((it, i) => (
                         <li key={i} className="flex items-start gap-2">
-                          <CheckCircle2 size={15} className="mt-0.5 shrink-0 text-[#10B981]" />
+                          <CheckCircle2 size={15} className="mt-0.5 shrink-0 text-emerald-400" />
                           <span className="font-medium">{it}</span>
                         </li>
                       ))}
@@ -168,7 +168,7 @@ export function TreatmentList({ activeCategory }: { activeCategory: Category }) 
                     {pkg.benefits.map((b, i) => (
                       <span
                         key={i}
-                        className="rounded-full bg-secondary/50 px-2.5 py-1 text-[0.68rem] font-medium text-heading"
+                        className="rounded-full border border-purple-500/25 bg-secondary/60 px-2.5 py-1 text-[0.68rem] font-medium text-purple-200"
                       >
                         ✓ {b}
                       </span>
@@ -180,14 +180,14 @@ export function TreatmentList({ activeCategory }: { activeCategory: Category }) 
                 <div className="mt-7 border-t border-border/60 pt-5">
                   <div className="flex items-baseline justify-between">
                     <div>
-                      <span className="block text-[0.72rem] text-body/70 line-through">
+                      <span className="block text-[0.72rem] text-body/60 line-through">
                         {pkg.normalPrice}
                       </span>
-                      <span className="font-serif text-2xl font-bold text-primary md:text-3xl">
+                      <span className="font-serif text-2xl font-bold text-[#FDE047] md:text-3xl">
                         {pkg.bundlePrice}
                       </span>
                     </div>
-                    <span className="rounded-full border border-[#D4AF37]/60 bg-[#FAF4DD] px-2.5 py-1 text-[0.7rem] font-bold text-[#B45309]">
+                    <span className="rounded-full border border-[#D4AF37]/60 bg-[#D4AF37]/15 px-2.5 py-1 text-[0.7rem] font-bold text-[#FDE047]">
                       {pkg.savings}
                     </span>
                   </div>
@@ -198,7 +198,7 @@ export function TreatmentList({ activeCategory }: { activeCategory: Category }) 
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-primary font-sans text-sm font-semibold text-white shadow-soft transition-all duration-300 hover:bg-[#520E6B] hover:shadow-md"
+                    className="mt-4 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#D4AF37] via-[#F59E0B] to-[#D4AF37] font-sans text-sm font-bold text-[#1E042B] shadow-luxe transition-all duration-300 hover:scale-[1.02] hover:shadow-xl"
                   >
                     <MessageCircle size={18} />
                     <span>Booking Paket Ini</span>
@@ -278,7 +278,7 @@ export function TreatmentList({ activeCategory }: { activeCategory: Category }) 
 
               <a
                 href={generateWAUrl(
-                  "Halo admin Hayyin Muslimah Salon & Spa, saya ingin reservasi treatment Japanese Head Spa (Rp 350.000). Apakah slot tersedia?"
+                  `Halo admin Hayyin Muslimah Salon & Spa, saya ingin reservasi treatment Japanese Head Spa (${JAPANESE_HEAD_SPA.price}). Apakah slot tersedia?`
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -304,12 +304,12 @@ export function TreatmentList({ activeCategory }: { activeCategory: Category }) 
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: gi * 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className="flex flex-col rounded-[24px] border border-border/80 bg-card p-6 shadow-soft transition-all duration-500 hover:shadow-luxe md:p-8"
+              className="flex flex-col rounded-[24px] border border-border/80 bg-card p-6 shadow-soft transition-all duration-500 hover:border-[#D4AF37]/40 hover:shadow-luxe md:p-8"
             >
               {/* Header Grup dengan aksen ungu & emas */}
               <div className="mb-6 flex items-center gap-4">
-                <div className="h-6 w-1 rounded-full bg-primary" />
-                <h3 className="font-serif text-xl font-semibold text-heading md:text-2xl">
+                <div className="h-6 w-1 rounded-full bg-[#D4AF37]" />
+                <h3 className="font-serif text-xl font-semibold text-white md:text-2xl">
                   {groupName}
                 </h3>
                 <div className="h-px flex-1 bg-border/60" />
@@ -320,17 +320,17 @@ export function TreatmentList({ activeCategory }: { activeCategory: Category }) 
                 {items.map((s, i) => (
                   <div
                     key={`${s.name}-${i}`}
-                    className="group/item flex flex-wrap items-center justify-between gap-3 -mx-3 rounded-[14px] px-3 py-3.5 transition-colors hover:bg-secondary/25"
+                    className="group/item flex flex-wrap items-center justify-between gap-3 -mx-3 rounded-[14px] px-3 py-3.5 transition-colors hover:bg-secondary/40"
                   >
                     <div className="flex min-w-0 flex-1 flex-col gap-1">
                       <div className="flex flex-wrap items-center gap-2">
-                        <p className="font-sans text-[0.95rem] font-semibold text-heading transition-colors group-hover/item:text-primary">
+                        <p className="font-sans text-[0.95rem] font-semibold text-white transition-colors group-hover/item:text-[#FDE047]">
                           {s.name}
                         </p>
 
                         {/* Badges */}
                         {s.badge && (
-                          <span className="rounded-full border border-primary/20 bg-primary/10 px-2 py-0.5 text-[0.62rem] font-bold uppercase tracking-wider text-primary">
+                          <span className="rounded-full border border-primary/30 bg-primary/20 px-2 py-0.5 text-[0.62rem] font-bold uppercase tracking-wider text-[#D8B4FE]">
                             {s.badge}
                           </span>
                         )}
@@ -350,7 +350,7 @@ export function TreatmentList({ activeCategory }: { activeCategory: Category }) 
                             Mulai
                           </span>
                         )}
-                        <span className="inline-flex items-center rounded-full border border-[#D4AF37]/50 bg-[#38074E] px-3 py-0.5 font-sans text-xs font-bold text-white shadow-xs">
+                        <span className="inline-flex items-center rounded-full border border-[#D4AF37]/60 bg-[#160221] px-3 py-0.5 font-sans text-xs font-bold text-[#FDE047] shadow-xs">
                           {s.price}
                         </span>
                       </div>
@@ -362,7 +362,7 @@ export function TreatmentList({ activeCategory }: { activeCategory: Category }) 
                       )}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex h-9 shrink-0 items-center justify-center gap-1.5 rounded-lg border border-primary/40 bg-white px-3.5 text-xs font-semibold text-primary shadow-xs transition-all duration-300 hover:border-primary hover:bg-primary hover:text-white focus:outline-none"
+                      className="inline-flex h-9 shrink-0 items-center justify-center gap-1.5 rounded-lg border border-[#D4AF37]/40 bg-[#D4AF37]/10 px-3.5 text-xs font-semibold text-[#FDE047] shadow-xs transition-all duration-300 hover:border-[#D4AF37] hover:bg-gradient-to-r hover:from-[#D4AF37] hover:to-[#F59E0B] hover:text-[#1E042B] focus:outline-none"
                       aria-label={`Booking ${s.name} via WhatsApp`}
                       title={`Booking ${s.name}`}
                     >

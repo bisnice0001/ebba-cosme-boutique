@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border/50 bg-background pt-16 pb-28 md:py-16">
+    <footer className="border-t border-purple-900/30 bg-[#12021A] pt-16 pb-28 md:py-16">
       
       {/* SEO Hidden Data untuk Local Business Profile */}
       <div className="sr-only" itemScope itemType="https://schema.org/BeautySalon">
@@ -34,10 +34,10 @@ export function Footer() {
                 className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105 md:h-14"
               />
               <div className="flex flex-col text-left">
-                <span className="font-serif text-2xl font-semibold text-heading transition-colors group-hover:text-primary">
+                <span className="font-serif text-2xl font-semibold text-white transition-colors group-hover:text-[#FDE047]">
                   Hayyin
                 </span>
-                <span className="mt-0.5 font-sans text-[0.62rem] font-bold uppercase tracking-[0.22em] text-primary">
+                <span className="mt-0.5 font-sans text-[0.62rem] font-bold uppercase tracking-[0.22em] text-[#D4AF37]">
                   Muslimah Salon & Spa
                 </span>
               </div>
@@ -49,10 +49,10 @@ export function Footer() {
 
           {/* LOCATION COLUMN */}
           <div className="flex flex-col items-center text-center md:items-start md:text-left">
-            <h3 className="font-serif text-lg font-medium text-heading">Visit Us</h3>
+            <h3 className="font-serif text-lg font-medium text-white">Visit Us</h3>
             <div className="mt-5 flex flex-col items-center gap-3 md:items-start">
               <div className="flex items-start gap-3 text-sm text-body">
-                <MapPin size={18} className="mt-0.5 shrink-0 text-primary/70" />
+                <MapPin size={18} className="mt-0.5 shrink-0 text-[#FDE047]" />
                 <span>
                   Ruko Kartanegara, <br />
                   Jl. Raya Karangploso kav 22, RT.7/RW.2,<br />
@@ -65,16 +65,16 @@ export function Footer() {
 
           {/* CONNECT / SOCIAL COLUMN */}
           <div className="flex flex-col items-center text-center md:items-start md:text-left">
-            <h3 className="font-serif text-lg font-medium text-heading">Connect</h3>
+            <h3 className="font-serif text-lg font-medium text-white">Connect</h3>
             <div className="mt-5 flex flex-col gap-4">
               <a 
                 href={generateWAUrl("Halo admin Hayyin Muslimah Salon & Spa, saya ingin konsultasi/reservasi treatment.")}
                 target="_blank"
                 rel="noreferrer"
-                className="group flex items-center gap-3 font-sans text-sm text-body transition-colors hover:text-primary focus:outline-none"
+                className="group flex items-center gap-3 font-sans text-sm text-body transition-colors hover:text-[#FDE047] focus:outline-none"
               >
-                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary/10 transition-colors group-hover:bg-primary/10">
-                  <MessageCircle size={16} className="text-primary" />
+                <div className="flex h-8 w-8 items-center justify-center rounded-full border border-purple-500/20 bg-white/5 transition-colors group-hover:bg-[#D4AF37]/15">
+                  <MessageCircle size={16} className="text-[#FDE047]" />
                 </div>
                 <span>Book via WhatsApp</span>
               </a>
@@ -82,10 +82,10 @@ export function Footer() {
                 href="https://www.instagram.com/ebbacosme_byhayyin?utm_source=qr"
                 target="_blank"
                 rel="noreferrer"
-                className="group flex items-center gap-3 font-sans text-sm text-body transition-colors hover:text-primary focus:outline-none"
+                className="group flex items-center gap-3 font-sans text-sm text-body transition-colors hover:text-[#FDE047] focus:outline-none"
               >
-                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary/10 transition-colors group-hover:bg-primary/10">
-                  <Instagram size={16} className="text-primary" />
+                <div className="flex h-8 w-8 items-center justify-center rounded-full border border-purple-500/20 bg-white/5 transition-colors group-hover:bg-[#D4AF37]/15">
+                  <Instagram size={16} className="text-[#FDE047]" />
                 </div>
                 <span>@ebbacosme_byhayyin</span>
               </a>
@@ -95,7 +95,7 @@ export function Footer() {
         </div>
 
         {/* BOTTOM COPYRIGHT BAR */}
-        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-8 text-center md:flex-row md:text-left">
+        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-purple-900/30 pt-8 text-center md:flex-row md:text-left">
           <p className="font-sans text-xs text-body/70">
             © {new Date().getFullYear()} Hayyin Muslimah Salon & Spa. All rights reserved.
           </p>

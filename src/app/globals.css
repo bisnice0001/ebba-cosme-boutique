@@ -38,45 +38,45 @@
   --color-body: var(--body);
   --color-light: var(--light);
 
-  --shadow-luxe: 0 14px 40px -10px rgba(56, 7, 78, 0.14);
-  --shadow-soft: 0 8px 30px rgba(56, 7, 78, 0.06);
+  --shadow-luxe: 0 16px 40px -10px rgba(0, 0, 0, 0.65), 0 0 25px rgba(168, 85, 247, 0.15);
+  --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.45);
 }
 
 :root {
   --radius: 0.5rem;
 
-  /* Hayyin Muslimah Salon & Spa - Catalog Theme (Royal Purple & Warm Gold) */
-  --background: oklch(0.985 0.008 315);          /* #FAF6FD Lavender Pearl */
-  --foreground: oklch(0.25 0.12 315);            /* Deep Royal Purple */
-  --heading: oklch(0.25 0.12 315);               /* #38074E */
-  --body: oklch(0.44 0.05 320);                  /* #574063 Soft Plum Slate */
-  --light: oklch(0.65 0.03 320);                 /* #9683A1 */
+  /* Hayyin Muslimah Salon & Spa - Soft Dark Theme with Royal Violet & Warm Gold Accents */
+  --background: #150320;             /* Soft Dark Plum/Aubergine Velvet */
+  --foreground: #FAF5FF;             /* Luminous Crisp Soft White */
+  --heading: #FFFFFF;                /* Pure White Headings */
+  --body: #D4C3E0;                   /* Soft Silvery Lavender Mist */
+  --light: #A793B8;                  /* Muted Lilac */
 
-  --card: oklch(1 0 0);
-  --card-foreground: var(--heading);
-  --popover: oklch(1 0 0);
-  --popover-foreground: var(--heading);
+  --card: #20062E;                   /* Soft Dark Violet Card */
+  --card-foreground: #FAF5FF;
+  --popover: #20062E;
+  --popover-foreground: #FAF5FF;
 
-  --primary: oklch(0.44 0.18 318);              /* #6B178A Royal Purple */
-  --primary-foreground: oklch(1 0 0);
+  --primary: #A855F7;                /* Royal Luminous Purple */
+  --primary-foreground: #FFFFFF;
 
-  --secondary: oklch(0.93 0.04 315);             /* #F3E6FA Soft Lilac */
-  --secondary-foreground: var(--heading);
+  --secondary: #2B0A3C;              /* Deep Soft Lilac Shade */
+  --secondary-foreground: #FAF5FF;
 
-  --accent: oklch(0.78 0.14 85);                 /* #D4AF37 Royal Gold */
-  --accent-foreground: oklch(0.2 0.08 315);
+  --accent: #D4AF37;                 /* Metallic Royal Gold */
+  --accent-foreground: #1E042B;
 
-  --accent-sage: oklch(0.82 0.18 120);           /* #B5D92A Neon Citron/Lime */
+  --accent-sage: #B5D92A;
 
-  --muted: oklch(0.96 0.015 315);
-  --muted-foreground: var(--body);
+  --muted: #260835;
+  --muted-foreground: #B29EC4;
 
   --destructive: oklch(0.6 0.22 25);
-  --destructive-foreground: oklch(1 0 0);
+  --destructive-foreground: #FFFFFF;
 
-  --border: oklch(0.92 0.025 315);               /* #EBDDF5 Soft Purple Border */
-  --input: oklch(0.92 0.025 315);
-  --ring: oklch(0.44 0.18 318);
+  --border: #3D1254;                 /* Subtle Soft Purple Border */
+  --input: #320B47;
+  --ring: #D4AF37;
 }
 
 @layer base {
@@ -86,6 +86,7 @@
 
   html {
     scroll-behavior: smooth;
+    color-scheme: dark;
   }
 
   body {
@@ -99,6 +100,11 @@
     font-family: var(--font-serif);
     color: var(--color-heading);
     letter-spacing: -0.01em;
+  }
+
+  strong {
+    color: #FFFFFF;
+    font-weight: 600;
   }
 }
 
@@ -120,9 +126,9 @@
   .shadow-soft { box-shadow: var(--shadow-soft); }
 
   .glass {
-    background: rgba(250, 247, 248, 0.72);
-    backdrop-filter: saturate(180%) blur(14px);
-    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    background: rgba(21, 3, 32, 0.85);
+    backdrop-filter: saturate(180%) blur(16px);
+    -webkit-backdrop-filter: saturate(180%) blur(16px);
   }
 
   .hide-scrollbar::-webkit-scrollbar { display: none; }
