@@ -46,25 +46,24 @@ export function Navbar() {
         {/* LOGO AREA (SEO Optimized) */}
         <a 
           href="#top" 
-          className="group flex items-center gap-3 rounded-sm transition-opacity hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-4"
-          aria-label="Ebbacosme Salon & Spa Homepage"
+          className="group flex items-center gap-3 rounded-sm transition-opacity hover:opacity-85 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-4"
+          aria-label="Hayyin Muslimah Salon & Spa Homepage"
         >
           <Image
-            src="/logo.webp"
-            alt="Logo"
-            width={80}
+            src="/logo.png"
+            alt="Hayyin Muslimah Salon & Spa Logo"
+            width={120}
             height={80}
-            sizes="80px"
-            quality={60}
+            quality={95}
             priority
-            className="h-10 w-auto md:h-12"
+            className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105 md:h-12"
           />
           <div className="flex flex-col justify-center">
-            <span className="font-serif text-[1.35rem] leading-none text-heading md:text-[1.5rem]">
-              Ebbacosme
+            <span className="font-serif text-[1.25rem] font-semibold leading-tight text-heading tracking-tight md:text-[1.45rem]">
+              Hayyin
             </span>
-            <span className="mt-1 font-sans text-[0.65rem] font-bold uppercase tracking-[0.35em] text-primary">
-              by Hayyin
+            <span className="mt-0.5 font-sans text-[0.6rem] font-bold uppercase tracking-[0.2em] text-primary md:text-[0.64rem]">
+              Muslimah Salon & Spa
             </span>
           </div>
         </a>
@@ -86,7 +85,7 @@ export function Navbar() {
 
         {/* DESKTOP CTA */}
         <a
-          href={generateWAUrl("Halo admin Ebbacosme, saya ingin reservasi treatment.")}
+          href={generateWAUrl("Halo admin Hayyin Muslimah Salon & Spa, saya ingin reservasi treatment.")}
           target="_blank"
           rel="noreferrer"
           className="hidden h-11 items-center justify-center rounded-[8px] bg-primary px-7 font-sans text-sm font-medium text-primary-foreground shadow-soft transition-all duration-300 hover:scale-[1.02] hover:bg-accent focus:outline-none focus:ring-2 focus:ring-primary md:inline-flex"
@@ -139,7 +138,7 @@ export function Navbar() {
                 className="mt-4"
               >
                 <a
-                  href={generateWAUrl("Halo admin Ebbacosme, saya ingin reservasi treatment.")}
+                  href={generateWAUrl("Halo admin Hayyin Muslimah Salon & Spa, saya ingin reservasi treatment.")}
                   target="_blank"
                   rel="noreferrer"
                   onClick={() => setOpen(false)}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 import dynamic from "next/dynamic";
@@ -18,15 +18,10 @@ const Visit = dynamic(() => import("@/components/Visit").then((mod) => mod.Visit
 const CTA = dynamic(() => import("@/components/CTA").then((mod) => mod.CTA));
 const Footer = dynamic(() => import("@/components/Footer").then((mod) => mod.Footer));
 const WhatsAppFloat = dynamic(() => import("@/components/WhatsAppFloat").then((mod) => mod.WhatsAppFloat), { ssr: false });
-import { SERVICES, type Category } from "@/lib/services";
+import { type Category } from "@/lib/services";
 
 export default function Page() {
-  const [active, setActive] = useState<Category>("Hair");
-
-  const filtered = useMemo(
-    () => SERVICES.filter((s) => s.category === active),
-    [active],
-  );
+  const [active, setActive] = useState<Category>("Paket Bundling");
 
   return (
     <main className="min-h-screen bg-background">
@@ -44,21 +39,20 @@ export default function Page() {
             transition={{ duration: 0.7 }}
             className="text-center"
           >
-            <p className="text-xs uppercase tracking-[0.32em] text-primary">Our Treatments</p>
+            <p className="text-xs uppercase tracking-[0.32em] text-primary">Price List & Perawatan</p>
             <h2 className="mt-4 font-serif text-4xl text-heading md:text-6xl">
-              Crafted for every<br /><em className="text-primary">version of you</em>.
+              Relax · Beauty · <em className="text-primary italic">Comfort</em>
             </h2>
-            <p className="mx-auto mt-5 max-w-xl text-body">
-              From a quick keramas to a full Japanese Spa ritual — choose a category and
-              tap any treatment to book instantly via WhatsApp.
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-body md:text-base">
+              Rangkaian perawatan lengkap khusus wanita dari potong rambut, styling, hair spa, facial, body treatment, hingga <strong>Japanese Head Spa</strong> & <strong>Paket Bundling Hemat</strong>.
             </p>
           </motion.div>
 
-          <div className="mt-12">
+          <div className="mt-10">
             <CategoryFilter active={active} onChange={setActive} />
           </div>
 
-          <TreatmentList services={filtered} />
+          <TreatmentList activeCategory={active} />
         </div>
       </section>
 

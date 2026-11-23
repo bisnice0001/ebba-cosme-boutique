@@ -24,7 +24,7 @@ export function WhatsAppFloat() {
       />
 
       <motion.a
-        href={generateWAUrl("Halo admin Ebbacosme, saya ingin konsultasi dan reservasi treatment.")}
+        href={generateWAUrl("Halo admin Hayyin Muslimah Salon & Spa, saya ingin konsultasi dan reservasi treatment.")}
         target="_blank"
         rel="noopener noreferrer"
         initial={{ opacity: 0, scale: 0.8, y: 20 }}
@@ -33,8 +33,8 @@ export function WhatsAppFloat() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         className="relative flex h-14 items-center gap-3 rounded-full bg-primary px-5 text-sm font-medium text-primary-foreground shadow-luxe transition-colors hover:bg-heading focus:outline-none focus:ring-4 focus:ring-primary/30"
-        aria-label="Konsultasi dan Booking via WhatsApp di Ebbacosme"
-        title="Hubungi Admin Ebbacosme"
+        aria-label="Konsultasi dan Booking via WhatsApp di Hayyin Muslimah Salon & Spa"
+        title="Hubungi Admin Hayyin Muslimah Salon & Spa"
       >
         <svg 
           viewBox="0 0 24 24" 

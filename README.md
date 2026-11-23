@@ -1,6 +1,6 @@
-# Ebba Cosme by Hayyin
+# Hayyin Muslimah Salon & Spa
 
-A premium, responsive landing page for **Ebba Cosme by Hayyin**—a boutique salon and spa located in Karangploso, Malang, Indonesia. This site is designed with a "soft feminine luxury" aesthetic, optimized for high conversion, search engine discoverability (SEO), and fast loading times.
+A premium, responsive landing page for **Hayyin Muslimah Salon & Spa**—a boutique salon and spa located in Karangploso, Malang, Indonesia. This site is designed with a "soft feminine luxury" aesthetic, optimized for high conversion, search engine discoverability (SEO), and fast loading times.
 
 ---
 

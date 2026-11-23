@@ -6,18 +6,18 @@ import { Sparkles, HeartHandshake, ShieldCheck } from "lucide-react";
 const REASONS = [
   {
     icon: ShieldCheck,
-    title: "Premium & Halal Products",
-    description: "Kami secara eksklusif menggunakan produk berkualitas tinggi, tersertifikasi, dan aman seperti Wardah, SR12, NU Skin, dan brand Korea yang terjamin kehalalan serta kebaikannya untuk memastikan kilau alami dan kesehatan kulit serta rambut Anda.",
+    title: "Produk Halal & Terpercaya",
+    description: "Menggunakan rangkaian produk resmi berkualitas tinggi seperti Makarizo, L'Oreal, Wardah, SR12, dan Nu Skin yang aman, bersertifikat BPOM, dan terjamin kehalalannya.",
   },
   {
     icon: HeartHandshake,
-    title: "Trained Professionals",
-    description: "Dari hair treatment premium, pijat relaksasi, hingga perawatan tubuh, tim terapis profesional kami didedikasikan untuk memberikan hasil terbaik yang disesuaikan dengan kebutuhan Anda.",
+    title: "Terapis Profesional Wanita",
+    description: "Ditangani langsung oleh terapis dan kapster wanita berpengalaman yang ramah, telaten, dan profesional dalam menghadirkan relaksasi terbaik.",
   },
   {
     icon: Sparkles,
-    title: "Muslimah Friendly & Private",
-    description: "Sebuah ruang sanctuary khusus wanita. Didesain dengan estetika arch yang menenangkan dan jaminan privasi penuh agar Anda bisa benar-benar bersantai.",
+    title: "100% Khusus Wanita & Privat",
+    description: "Sanctuary kecantikan khusus wanita dengan jaminan privasi penuh, tertutup, tenang, dan muslimah friendly agar Anda dapat me-time dengan damai.",
   },
 ];
 
@@ -32,9 +32,9 @@ export function WhyChooseUs() {
 
       {/* SEO HIDDEN BLOCK */}
       <div className="sr-only">
-        <h2>Keunggulan Ebbacosme Salon & Spa Karangploso</h2>
+        <h2>Keunggulan Hayyin Muslimah Salon & Spa Karangploso</h2>
         <p>
-          Mengapa memilih Ebbacosme Salon di Malang? Kami adalah salon wanita dan muslimah friendly terbaik yang menawarkan privasi penuh. 
+          Mengapa memilih Hayyin Muslimah Salon & Spa di Malang? Kami adalah salon wanita dan muslimah friendly terbaik yang menawarkan privasi penuh. 
           Menggunakan produk premium dan halal untuk hair treatment, smoothing, pewarnaan rambut, dan facial. 
           Ditangani langsung oleh kapster dan terapis spa berpengalaman di area Malang, Batu, dan sekitarnya. 
           Kami menjamin kenyamanan, keamanan, dan hasil yang memuaskan dengan harga terjangkau.
@@ -53,7 +53,7 @@ export function WhyChooseUs() {
         >
           <p className="flex items-center justify-center gap-3 font-sans text-xs font-bold uppercase tracking-[0.25em] text-primary">
             <span className="h-px w-6 bg-primary/40"></span>
-            Why Ebbacosme
+            Why Hayyin
             <span className="h-px w-6 bg-primary/40"></span>
           </p>
           <h2 className="mt-5 font-serif text-4xl leading-tight text-heading md:text-5xl">

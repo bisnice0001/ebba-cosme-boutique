@@ -7,7 +7,7 @@ const STEPS = [
   {
     icon: MousePointerClick,
     title: "1. Choose Your Ritual",
-    description: "Explore our menu—from Japanese Hair Spa to Korean Glow Facials—and find your perfect match.",
+    description: "Explore our menu—from Japanese Head Spa, Paket Bundling, to Korean Facials—and find your perfect match.",
   },
   {
     icon: MessageSquareText,
@@ -27,7 +27,7 @@ export function HowToBook() {
       
       {/* SEO HIDDEN BLOCK */}
       <div className="sr-only">
-        <h2>Cara Reservasi dan Booking di Ebbacosme Salon & Spa</h2>
+        <h2>Cara Reservasi dan Booking di Hayyin Muslimah Salon & Spa</h2>
         <p>
           Booking perawatan salon dan spa di Karangploso, Malang kini sangat mudah. 
           Pertama, pilih menu treatment pilihan Anda, mulai dari hair treatment, smoothing, hingga perawatan wajah. 

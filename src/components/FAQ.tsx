@@ -6,8 +6,8 @@ import { Plus } from "lucide-react";
 
 const FAQS = [
   {
-    question: "Apakah Ebbacosme Salon khusus untuk wanita (Muslimah friendly)?",
-    answer: "Ya, Ebbacosme Salon & Spa memiliki area perawatan yang 100% dikhususkan dan tertutup untuk wanita. Kami menjamin privasi penuh (muslimah friendly), sehingga Anda bisa me-time dengan tenang dan nyaman.",
+    question: "Apakah Hayyin Muslimah Salon & Spa khusus untuk wanita (Muslimah friendly)?",
+    answer: "Ya, Hayyin Muslimah Salon & Spa memiliki area perawatan yang 100% dikhususkan dan tertutup untuk wanita. Kami menjamin privasi penuh (muslimah friendly), sehingga Anda bisa me-time dengan tenang dan nyaman.",
   },
   {
     question: "Bagaimana cara reservasi treatment di salon ini?",
@@ -15,10 +15,14 @@ const FAQS = [
   },
   {
     question: "Apakah produk yang digunakan aman dan halal?",
-    answer: "Tentu. Kami hanya menggunakan produk premium, bersertifikat BPOM, dan halal seperti Wardah, SR12, NU Skin, dan brand Korea yang terjamin kehalalan serta kebaikannya yang disesuaikan secara khusus dengan kondisi kulit dan rambut Anda.",
+    answer: "Tentu. Kami hanya menggunakan produk premium, bersertifikat BPOM, dan halal seperti Makarizo, L'Oreal, Wardah, SR12, dan Nu Skin yang terjamin kehalalan serta kebaikannya yang disesuaikan secara khusus dengan kondisi kulit dan rambut Anda.",
   },
   {
-    question: "Di mana lokasi detail salon Ebbacosme?",
+    question: "Apa saja signature treatment dan paket bundling yang tersedia?",
+    answer: "Kami menyediakan perawatan unggulan Japanese Head Spa 8 tahapan relaksasi, Korean Glass Skin Facial, Nu Skin Galvanic, serta aneka Paket Bundling Hemat (Relaxing Touch, Smooth & Glow, Hayyin Esential, Hayyin Signature, hingga Hayyin Premium) dengan harga bundling yang lebih terjangkau.",
+  },
+  {
+    question: "Di mana lokasi detail salon Hayyin Muslimah Salon & Spa?",
     answer: "Sanctuary kami berlokasi di Ruko Kartanegara, Jl. Raya Karangploso kav 22, RT.7/RW.2, Karangploso, Girimoyo, Kec. Karang Ploso, Kabupaten Malang, Jawa Timur 65152. Detail alamat lengkap beserta titik presisi Google Maps juga akan langsung kami kirimkan sesaat setelah Anda melakukan konfirmasi booking via WhatsApp.",
   },
 ];

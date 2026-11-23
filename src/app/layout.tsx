@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ebbacosme Salon & Spa By Hayyin | Salon Wanita & Spa Premium Karangploso Malang",
-  description: "Nikmati perawatan kecantikan premium di Ebbacosme by Hayyin Karangploso. Dari Hair Treatment, Facial, hingga Body Slimming dengan harga terjangkau. Booking sekarang!",
+  title: "Hayyin Muslimah Salon & Spa | Salon Wanita & Spa Premium Karangploso Malang",
+  description: "Nikmati perawatan kecantikan premium di Hayyin Muslimah Salon & Spa Karangploso. Dari Hair Treatment, Facial, hingga Body Slimming dengan harga terjangkau. Booking sekarang!",
   keywords: [
     // Brand Keyword
-    "Ebbacosme Salon & Spa By Hayyin", "Ebbacosme Salon", "Ebbacosme Spa", "Salon Hayyin", "Ebbacosme Malang", 
-    "Ebbacosme Karangploso", "Ebbacosme Salon Malang", "Ebbacosme Salon Karangploso", "Ebbacosme Beauty Salon", 
-    "Ebbacosme Hair Spa", "Ebbacosme Hair Treatment", "Ebbacosme Hair Color", 
-    "Ebbacosme Salon Wanita", "Ebbacosme Salon dan Spa", "Ebbacosme Kecantikan", "Ebbacosme Perawatan Rambut", 
-    "Ebbacosme Salon Terbaik", "Ebbacosme Salon Murah",
+    "Hayyin Muslimah Salon & Spa", "Hayyin Muslimah Salon", "Hayyin Salon", "Hayyin Spa", "Salon Hayyin", "Hayyin Malang", 
+    "Hayyin Karangploso", "Hayyin Salon Malang", "Hayyin Salon Karangploso", "Hayyin Beauty Salon", 
+    "Hayyin Hair Spa", "Hayyin Hair Treatment", "Hayyin Hair Color", 
+    "Hayyin Salon Wanita", "Hayyin Salon dan Spa", "Hayyin Kecantikan", "Hayyin Perawatan Rambut", 
+    "Hayyin Salon Terbaik", "Hayyin Salon Murah",
     
     // Keyword Salon Umum
     "salon Malang", "salon Karangploso", "salon wanita Malang", "salon wanita Karangploso", "salon kecantikan Malang", 
@@ -76,14 +76,14 @@ export const metadata: Metadata = {
     "tempat beauty treatment Malang", "salon paling recommended Malang", "salon terbaik untuk wanita Malang"
   ],
   openGraph: {
-    title: "Ebbacosme Salon & Spa By Hayyin | Salon Wanita & Spa Premium",
-    description: "Nikmati perawatan kecantikan premium di Ebbacosme by Hayyin Karangploso. Dari Hair Treatment, Facial, hingga Body Slimming.",
+    title: "Hayyin Muslimah Salon & Spa | Salon Wanita & Spa Premium",
+    description: "Nikmati perawatan kecantikan premium di Hayyin Muslimah Salon & Spa Karangploso. Dari Hair Treatment, Facial, hingga Body Slimming.",
     type: "website",
     locale: "id_ID",
-    siteName: "Ebbacosme Salon & Spa By Hayyin",
+    siteName: "Hayyin Muslimah Salon & Spa",
   },
   alternates: {
-    canonical: "https://www.ebbacosmesalon.biz.id", // Ganti dengan domain aslimu nanti
+    canonical: "https://www.hayyinmuslimahsalon.biz.id", // Ganti dengan domain aslimu nanti
   },
   icons: {
     icon: "/favicon.png",

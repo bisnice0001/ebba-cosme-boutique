@@ -6,18 +6,18 @@ import Image from "next/image";
 const PILLARS = [
   {
     icon: Leaf,
-    title: "Natural Beauty Rituals",
-    body: "Menggunakan Wardah, SR12, NU Skin, dan brand Korea berkualitas untuk kilau kulit dan rambut yang sehat natural.",
+    title: "Natural & Halal Beauty",
+    body: "Menggunakan produk berkualitas terpercaya seperti Makarizo, L'Oreal, Wardah, SR12, dan Nu Skin untuk kilau rambut dan kulit yang sehat.",
   },
   {
     icon: Sparkles,
-    title: "Signature Spa Treatments",
-    body: "Japanese Hair Spa, Galvanic Skin, dan Korean Detox yang dirancang khusus oleh terapis profesional kami.",
+    title: "Signature Spa & Bundling",
+    body: "Japanese Head Spa 8 Tahap, Galvanic Facial Nu Skin, Korean Glass Skin, dan Paket Bundling Hemat lengkap.",
   },
   {
     icon: HandHeart,
     title: "Private Women's Sanctuary",
-    body: "Ruang perawatan khusus wanita (muslimah friendly) yang tenang, aman, dan menjaga privasi penuh.",
+    body: "Ruang perawatan 100% khusus wanita (muslimah friendly) yang tenang, aman, dan menjaga privasi penuh.",
   },
 ];
 
@@ -33,9 +33,9 @@ export function About() {
 
       {/* SEO HIDDEN BLOCK */}
       <div className="sr-only">
-        <h2>Tentang Ebbacosme Salon & Spa By Hayyin</h2>
+        <h2>Tentang Hayyin Muslimah Salon & Spa</h2>
         <p>
-          Ebbacosme adalah boutique salon dan spa khusus wanita di Karangploso, Malang. 
+          Hayyin Muslimah Salon & Spa adalah boutique salon dan spa khusus wanita di Karangploso, Malang. 
           Kami menawarkan ruang perawatan privasi tinggi (muslimah friendly) dengan layanan premium seperti 
           Japanese Spa, Galvanic Facial, dan Korean Detox. Menggunakan produk kecantikan berkualitas seperti Wardah, SR12, NU Skin, dan brand Korea, 
           kami memastikan setiap pelanggan mendapatkan perawatan rambut, wajah, dan tubuh terbaik dengan harga yang transparan.
@@ -56,7 +56,7 @@ export function About() {
       >
         <p className="flex items-center gap-3 font-sans text-xs font-bold uppercase tracking-[0.25em] text-primary">
           <span className="h-px w-6 bg-primary/40"></span>
-          The House of Ebba
+          The House of Hayyin
         </p>
         <h2 className="mt-4 font-serif text-4xl leading-[1.15] text-heading">
           Where neighborhood <br />
@@ -72,20 +72,48 @@ export function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className="relative mx-auto w-full max-w-[400px] md:max-w-none"
+          className="relative mx-auto w-full max-w-[340px] sm:max-w-[380px] lg:max-w-[450px]"
         >
+          {/* Decorative ambient glow */}
+          <div className="absolute -inset-2 rounded-[32px] sm:rounded-b-[180px] sm:rounded-t-[32px] md:rounded-[40px] bg-gradient-to-tr from-[#38074E]/15 via-[#D4AF37]/15 to-transparent blur-xl -z-10" />
 
-          <div className="arch-frame relative z-10 aspect-[3/4] w-full bg-muted shadow-luxe lg:aspect-[4/5]">
+          {/* Refined Luxury Architectural Frame */}
+          <div className="group relative z-10 aspect-[4/5] sm:aspect-[3/4] md:aspect-[4/5] w-full overflow-hidden rounded-[28px] sm:rounded-b-[170px] sm:rounded-t-[28px] md:rounded-[36px] border-2 border-white/80 ring-1 ring-[#D4AF37]/35 bg-white/40 shadow-luxe transition-all duration-500">
             <Image
               src="/about.png"
-              alt="Interior Aesthetic Ebbacosme Salon & Spa khusus wanita di Malang"
-              className="object-cover transition-transform duration-700 hover:scale-105"
+              alt="Interior Aesthetic Hayyin Muslimah Salon & Spa khusus wanita di Malang"
+              className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
             />
             {/* Inner luxury border */}
-            <div className="pointer-events-none absolute inset-0 rounded-[inherit] border border-white/20" />
+            <div className="pointer-events-none absolute inset-0 rounded-[inherit] border border-white/30" />
+            {/* Soft gradient bottom for badge contrast */}
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#2A053D]/40 via-transparent to-transparent sm:hidden" />
           </div>
+
+          {/* Floating Aesthetic Badge */}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="absolute -bottom-4 left-3 right-3 z-20 flex items-center justify-between rounded-2xl border border-white/80 bg-white/95 px-4 py-2.5 shadow-luxe backdrop-blur-md sm:-bottom-5 sm:-right-4 sm:left-auto sm:w-auto"
+          >
+            <div className="flex items-center gap-2.5">
+              <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                <Sparkles size={16} />
+              </div>
+              <div>
+                <p className="font-sans text-[10px] font-bold uppercase tracking-wider text-primary">
+                  Higienis & Halal
+                </p>
+                <p className="font-serif text-xs font-semibold text-heading">
+                  100% Khusus Muslimah
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </motion.div>
 
         {/* PENJELASAN (Urutan ke-3 di HP, Urutan Kanan di Desktop) */}
@@ -103,7 +131,7 @@ export function About() {
           <div className="hidden flex-col items-start md:flex">
             <p className="flex items-center gap-3 font-sans text-xs font-bold uppercase tracking-[0.25em] text-primary">
               <span className="h-px w-8 bg-primary/40"></span>
-              The House of Ebba
+              The House of Hayyin
             </p>
             <h2 className="mt-5 font-serif text-4xl leading-[1.15] text-heading md:text-5xl">
               Where neighborhood <br className="hidden lg:block" />
@@ -112,7 +140,7 @@ export function About() {
           </div>
           
           <p className="mt-0 font-sans text-base leading-relaxed text-body md:mt-6 md:text-lg">
-            Tersembunyi di tengah tenangnya Karangploso, <strong className="font-medium text-heading">Ebbacosme</strong> menghadirkan ritual *urban-spa* eksklusif untuk para wanita Malang. Kami merancang ruang estetika ini dengan harga yang transparan, pelayanan tulus, dan privasi penuh.
+            Tersembunyi di tengah tenangnya Karangploso, <strong className="font-medium text-heading">Hayyin Muslimah Salon & Spa</strong> menghadirkan ritual *urban-spa* eksklusif untuk para wanita Malang. Kami merancang ruang estetika ini dengan harga yang transparan, pelayanan tulus, dan privasi penuh.
           </p>
 
           {/* PILLARS / VALUES */}

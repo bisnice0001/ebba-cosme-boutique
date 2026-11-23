@@ -43,7 +43,7 @@ export function Visit() {
               </ul>
 
               <a
-                href={generateWAUrl("Booking treatment")}
+                href={generateWAUrl("Halo admin Hayyin Muslimah Salon & Spa, saya ingin konsultasi dan booking treatment.")}
                 target="_blank"
                 rel="noreferrer"
                 className="mt-8 inline-flex h-12 items-center rounded-md bg-primary px-7 text-sm font-medium text-primary-foreground shadow-soft transition-all hover:scale-[1.02] hover:bg-accent"
@@ -54,8 +54,8 @@ export function Visit() {
 
             <div className="relative min-h-[280px] w-full md:min-h-full">
               <iframe
-                title="Google Maps Location for Ebba Cosme Boutique"
-                src="https://maps.google.com/maps?q=Ebba+Cosme+Boutique+Karangploso&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                title="Google Maps Location for Hayyin Muslimah Salon & Spa"
+                src="https://maps.google.com/maps?q=Hayyin+Muslimah+Salon+Karangploso&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

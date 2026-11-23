@@ -30,9 +30,9 @@ export function Testimonials() {
 
       {/* SEO HIDDEN BLOCK */}
       <div className="sr-only">
-        <h2>Review dan Testimoni Pelanggan Ebbacosme Salon & Spa</h2>
+        <h2>Review dan Testimoni Pelanggan Hayyin Muslimah Salon & Spa</h2>
         <p>
-          Baca ulasan asli dan testimoni pelanggan Ebbacosme Salon di Karangploso Malang. 
+          Baca ulasan asli dan testimoni pelanggan Hayyin Muslimah Salon & Spa di Karangploso Malang. 
           Pelanggan kami sangat merekomendasikan layanan salon wanita dan spa kami, 
           mulai dari hasil smoothing rambut yang natural, pelayanan kapster dan terapis profesional, 
           Korean Glow Facial yang mencerahkan, hingga Hair Spa yang merelaksasi. 
